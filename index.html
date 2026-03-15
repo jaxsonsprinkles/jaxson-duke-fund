@@ -402,6 +402,14 @@
       color: var(--text-mid);
     }
     .message-body p { margin-bottom: 1.2rem; }
+    .next-step-headline {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--duke-blue);
+      margin: 1.4rem 0 1.4rem;
+      line-height: 1.2;
+    }
     .message-body .signature {
       font-family: 'DM Serif Display', serif;
       font-style: italic;
@@ -774,13 +782,10 @@
           <p class="section-eyebrow">Personal Message</p>
           <h2 class="section-title">A Note from Jaxson</h2>
           <div class="message-body">
-            <p>Hey everyone!</p>
-            <p>I am a rising junior at Strake Jesuit and somebody who has been quietly obsessed with how AI is going to change the world.
-This past January, I spent a week studying AI at Harvard. I was one of the youngest people in the class. I came home with a certificate - but more than that, I came home hungry.</p>
-            <p>This past January, I completed a week-long intensive at Harvard and earned a certificate in AI. Now I want to take my next step.</p>
-            <p>This summer I've been accepted into the National Student Leadership Conference (NSLC) Business &amp; Entrepreneurship Program at Duke University - a 9-day residential program focused on business, leadership, and real-world experience. This will actually be my first time ever studying out of state, and it's my first real taste of what college life is going to look like.</p>
-            <p>Junior year is right around the corner, which means college applications aren't far behind. The experiences I build this summer will shape the story I get to tell - and Duke is a big part of that story.</p>
-            <p>I'm raising $5,500 to cover tuition and round-trip flights, and I'm asking the people who know me best to help me get there.</p>
+            <p>Hey everyone! I'm a rising junior at Strake Jesuit, quietly obsessed with how AI is going to change the world. This past January, I completed a week-long intensive at Harvard and earned a certificate in AI.</p>
+            <p class="next-step-headline">Now I want to take my next step.</p>
+            <p>This summer, I've been accepted into the NSLC Business &amp; Entrepreneurship Program at Duke - a 9-day residential program on campus. Junior year is right around the corner, and the story I build this summer matters for college applications and beyond.</p>
+            <p>I'm raising $5,500 to cover tuition and flights. If you know me, I'm asking for your support.</p>
             <p>I've said I want to use AI to change the world. Duke is where I learn how.</p>
             <p class="signature">- Jaxson</p>
           </div>
@@ -832,22 +837,6 @@ This past January, I spent a week studying AI at Harvard. I was one of the young
           <h2 class="section-title">Here's exactly what your support does </h2>
           <p>I'm raising $5,500 - covering full program tuition plus round-trip airfare to Durham, NC. No donation is too small. Every dollar gets me closer.</p>
 
-          <div class="breakdown">
-            <div class="breakdown-item">
-              <div class="breakdown-item-left">
-                <span>🏛️</span>
-                <span>NSLC Program Tuition</span>
-              </div>
-              <span class="breakdown-item-amount">~$4,500</span>
-            </div>
-            <div class="breakdown-item">
-              <div class="breakdown-item-left">
-                <span>✈️</span>
-                <span>Round-Trip Airfare</span>
-              </div>
-              <span class="breakdown-item-amount">~$1,000</span>
-            </div>
-          </div>
         </div>
 
         <div class="goal-card reveal reveal-delay-2">
@@ -859,7 +848,7 @@ This past January, I spent a week studying AI at Harvard. I was one of the young
             <div class="progress-fill" id="progressFill"></div>
           </div>
           <div class="progress-meta">
-            <span>$480 raised</span>
+            <span>$900 raised</span>
             <span>Goal: $5,500</span>
           </div>
 
@@ -928,7 +917,7 @@ This past January, I spent a week studying AI at Harvard. I was one of the young
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setTimeout(() => {
-            progressFill.style.width = '8.7%'; // ~$480 raised
+            progressFill.style.width = '16.4%'; // ~$900 raised
           }, 300);
           progressObserver.disconnect();
         }
